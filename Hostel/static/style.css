@@ -1,0 +1,22 @@
+
+body{
+     background:#cccccc;
+}
+
+h3{
+     color:red;
+}
+nav a{
+     display:inline-block;
+     width: 200px;
+     text-align:center;
+     background-color:orange;
+     color:# ffffff;
+     padding:10px 0;
+}
+
+footer{
+     text-align:center;
+     padding: 10px 0;
+     background:orange;
+     color:#ffffff;

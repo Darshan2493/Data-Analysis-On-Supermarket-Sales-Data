@@ -1,0 +1,10 @@
+How to identify data and its types in column of datasets.
+1) Abc ----> string data
+2) [](box) ---> Date
+3) *(global) ---> Country
+
+Live Data Vs Extract data --->
+Live graph means if new data is added to the dataset it should reflect on my graph as well.
+
+extract data is downloaded data and it will reflect the graph same what data is, it has on the file 
+adding datasource as downloaded data.

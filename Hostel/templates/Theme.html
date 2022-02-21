@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <link href="../static/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+    <header>
+         <h1> BOYS HOSTEL DATA <h1>
+    </header>
+    <nav>                          
+        <a href='{{ url_for("hello_world")}}'>Home</a>
+        <a href='{{ url_for("about")}}'>About</a>
+        <a href='{{ url_for("allusers")}}'>All Users</a>
+    </nav>
+    
+    {% block content %}
+    
+    {% endblock %}
+    
+    <footer>
+         Boys Hostel Pune.
+    </footer>
+   
+    </body>
+</html>    
+

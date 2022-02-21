@@ -1,0 +1,34 @@
+{%extends 'theme.html'%}
+{% block content %}
+    <form action="{{url_for('adduser')}}" method="POST">
+        <label>Name<label>
+        <input type="text" name="uname" required/><br><br>
+        <label>Contact<label>
+        <input type="number" name="gcontact" required/><br><br>
+        <label>Room_no<label>
+        <input type="number" name="groom" /><br><br>
+        <label>Age<lable>
+        <input type="number" name="gage"/><br><br>
+        <input type="Submit" name="adduser" value="Add User"/><br><br>
+    </form>
+    <table border ="1" width ="400">
+        <tr>
+           <th>name</th>
+           <th>contact</th>
+           <th>room_no</th>
+           <th>age</th>
+           <th colspan="2">Action</th>
+        </tr>
+        {% for row in data %}
+        <tr align="center">
+             <td>{{row[1]}}</td>
+             <td>{{row[2]}}</td>
+             <td>{{row[3]}}</td>
+             <td>{{row[4]}}</td>
+             
+              <td><a href="{{url_for ('edit',id=row[0])}}">Edit</a></td>
+             <td><a href="{{url_for ('delete',id=row[0])}}">Delete</a></td>
+       </tr>
+    {% endfor %}
+    </table>
+{% endblock %}   
